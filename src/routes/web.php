@@ -6,6 +6,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('template', function () {
+    return view('index', [
+        'name' => 'Brandon'
+    ]);
+});
+
 Route::get('/hello', function () {
     return 'Hello';
 })->name('hello');
